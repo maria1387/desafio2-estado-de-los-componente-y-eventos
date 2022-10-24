@@ -1,0 +1,152 @@
+:root {
+  --login-bg:#f8f3ff;
+  --title-bg: #9089cc;
+  --button-bg: #674baf;
+  --light-pink: #e882e8;
+  --image-bg:  #eadbff ;
+}
+
+body {
+  height: 100vh;
+
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.hiddenButton{
+  padding: 20px 0 0 0;
+}
+.login-info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* padding-top: 0.5rem; */
+}
+.image-container {
+  padding: 2rem;
+  width: 50%;
+  background-color: var(--image-bg);
+  box-sizing: border-box;
+}
+
+
+.input-password{
+  -webkit-text-security: circle;
+}
+
+.App{
+  height: 43.75em;
+    width: 60em;
+    margin: 6em auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+ 
+}
+.formulario{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+  background-color: var(--login-bg);
+
+}
+
+.formulario {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input, button {
+  width: 200px;
+  height: 3.125rem;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+input {
+  padding-left: 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+input:hover {
+  border: 2px solid var(--button-bg);
+}
+
+.button {
+  
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-bg);
+  cursor: pointer;
+}
+.button:hover {
+ background-color: var(--light-pink);;
+}
+.image-container {
+  padding: 2rem;
+  height: 81.1%;
+  width: 55%;
+  background-color: var(--image-bg);
+  box-sizing: border-box;
+  text-align: center;
+}
+img{
+ margin-top: 80px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+  .App {
+      width: 70%;
+      margin-top: 3rem;
+  }
+  .login-info-container {
+      width: 100%;
+      border-radius: 5px;
+    height: 100%;
+  }
+  
+  .image-container {
+      display: none;
+  }  
+  .input-password {
+   margin-bottom: 30px;
+  }
+  .button {
+  
+  margin-bottom: 30px;
+  }
+  
+}
+
+
+@media screen and (max-width: 650px) {
+  .App {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+      height: 90%;
+  } 
+
+  
+.login-info-container > p {
+      margin: 0;
+  }
+} 
